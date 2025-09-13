@@ -27,7 +27,7 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="min-h-screen p-6 fade-in">
-        
+
         <!-- Header -->
         <header class="flex justify-between items-center mb-6 fade-in">
             <h1 class="text-2xl font-bold text-gray-800">Browse Plans</h1>
@@ -55,8 +55,6 @@
                     <option>Basic</option>
                     <option>Premium</option>
                     <option>Enterprise</option>
-                    <option>Starter</option>
-                    <option>Ultimate</option>
                 </select>
                 <button style="background-color: #f46b45;" class="text-white px-4 py-2 rounded hover:opacity-90 transition transform hover:scale-105">Apply Filters</button>
             </div>
@@ -64,16 +62,6 @@
 
         <!-- Plans List -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in">
-
-            <!-- Starter Plan -->
-            <div class="bg-white shadow rounded p-6 hover:shadow-xl hover:scale-105 transition transform duration-300 ease-in-out">
-                <h3 class="text-xl font-bold mb-3">Starter Plan</h3>
-                <p class="text-gray-600 mb-2">Features: 20 GB data, 2 weeks validity</p>
-                <p class="text-gray-800 font-semibold mb-2">Price: $4.99/month</p>
-                <p style="color: #f46b45;" class="text-sm mb-4 pulse-offer">📢 New users enjoy this plan at a discounted price!</p>
-                <button style="background-color: #f46b45;" class="text-white px-4 py-2 rounded hover:opacity-90 transition transform hover:scale-105 w-full">Subscribe</button>
-            </div>
-
             <!-- Basic Plan -->
             <div class="bg-white shadow rounded p-6 hover:shadow-xl hover:scale-105 transition transform duration-300 ease-in-out">
                 <h3 class="text-xl font-bold mb-3">Basic Plan</h3>
@@ -100,16 +88,32 @@
                 <p style="color: #f46b45;" class="text-sm mb-4">📞 Tailored plans for businesses</p>
                 <button style="background-color: #f46b45;" class="text-white px-4 py-2 rounded hover:opacity-90 transition transform hover:scale-105 w-full">Contact Sales</button>
             </div>
+        </div>
 
-            <!-- Ultimate Plan -->
-            <div class="bg-white shadow rounded p-6 hover:shadow-xl hover:scale-105 transition transform duration-300 ease-in-out">
-                <h3 class="text-xl font-bold mb-3">Ultimate Plan</h3>
-                <p class="text-gray-600 mb-2">Features: Unlimited data, premium support</p>
-                <p class="text-gray-800 font-semibold mb-2">Price: $49.99/month</p>
-                <p style="color: #f46b45;" class="text-sm mb-4 pulse-offer">🚀 Best value for power users!</p>
-                <button style="background-color: #f46b45;" class="text-white px-4 py-2 rounded hover:opacity-90 transition transform hover:scale-105 w-full">Subscribe</button>
+        <!-- Company Info Section -->
+        <div class="mt-8 bg-white shadow rounded p-6 fade-in">
+            <h2 class="text-xl font-semibold mb-4">About Our Company</h2>
+            <p class="text-gray-700 mb-2"><strong>Name:</strong> OrangeWave Communications</p>
+            <p class="text-gray-700 mb-2"><strong>Location:</strong> 1234 Sunset Blvd, California, USA</p>
+            <p class="text-gray-700 mb-2"><strong>Contact:</strong> support@orangewave.com | +1 (555) 123-4567</p>
+            <p class="text-gray-700">Our mission is to empower users with reliable, affordable, and flexible data solutions tailored to their unique needs.</p>
+        </div>
+
+        <!-- Ads Section -->
+        <div class="mt-8 bg-white shadow rounded p-6 fade-in">
+            <h2 class="text-xl font-semibold mb-4">Advertisements</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div style="background-color: #fda08520;" class="p-4 rounded hover:shadow-md transition transform hover:scale-105">
+                    <h3 style="color: #f46b45;" class="font-bold mb-2">Upgrade to Premium!</h3>
+                    <p class="text-gray-700 mb-2">Get faster speeds and exclusive offers by upgrading to our Premium plan today!</p>
+                    <button style="background-color: #f46b45;" class="text-white px-4 py-2 rounded hover:opacity-90 transition transform hover:scale-105">Learn More</button>
+                </div>
+                <div style="background-color: #fda08520;" class="p-4 rounded hover:shadow-md transition transform hover:scale-105">
+                    <h3 style="color: #f46b45;" class="font-bold mb-2">Refer & Earn</h3>
+                    <p class="text-gray-700 mb-2">Invite your friends and earn bonus data when they sign up with OrangeWave!</p>
+                    <button style="background-color: #f46b45;" class="text-white px-4 py-2 rounded hover:opacity-90 transition transform hover:scale-105">Refer Now</button>
+                </div>
             </div>
-
         </div>
 
         <!-- Recommendations Section -->
@@ -144,4 +148,3 @@
     </div>
 </body>
 </html>
-
