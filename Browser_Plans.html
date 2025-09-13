@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Browse Plans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+
+        /* Pulse animation for offers */
+        @keyframes pulseOffer {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .pulse-offer {
+            animation: pulseOffer 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="min-h-screen p-6 fade-in">
+        
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-6 fade-in">
+            <h1 class="text-2xl font-bold text-gray-800">Browse Plans</h1>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition transform hover:scale-105">Back to Dashboard</button>
+        </header>
+
+        <!-- Filter Section -->
+        <div class="bg-white shadow rounded p-4 mb-6 fade-in">
+            <h2 class="text-lg font-semibold mb-4">Filter Plans</h2>
+            <div class="flex flex-wrap gap-4">
+                <select class="border rounded p-2 w-48 hover:border-blue-500 transition">
+                    <option selected disabled>Price Range</option>
+                    <option>Under $10</option>
+                    <option>$10 - $30</option>
+                    <option>$30+</option>
+                </select>
+                <select class="border rounded p-2 w-48 hover:border-blue-500 transition">
+                    <option selected disabled>Data Features</option>
+                    <option>Up to 50 GB</option>
+                    <option>50 GB - 100 GB</option>
+                    <option>Unlimited</option>
+                </select>
+                <select class="border rounded p-2 w-48 hover:border-blue-500 transition">
+                    <option selected disabled>Category</option>
+                    <option>Basic</option>
+                    <option>Premium</option>
+                    <option>Enterprise</option>
+                </select>
+                <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition transform hover:scale-105">Apply Filters</button>
+            </div>
+        </div>
+
+        <!-- Plans List -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 fade-in">
+            <!-- Plan Card -->
+            <div class="bg-white shadow rounded p-6 hover:shadow-xl hover:scale-105 transition transform duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-3">Basic Plan</h3>
+                <p class="text-gray-600 mb-2">Features: 50 GB data, 1 month validity</p>
+                <p class="text-gray-800 font-semibold mb-2">Price: $9.99/month</p>
+                <p class="text-sm text-green-600 mb-4 pulse-offer">🎁 Special Offer: 10% off this month!</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition transform hover:scale-105 w-full">Subscribe</button>
+            </div>
+
+            <div class="bg-white shadow rounded p-6 hover:shadow-xl hover:scale-105 transition transform duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-3">Premium Plan</h3>
+                <p class="text-gray-600 mb-2">Features: 100 GB data, 1 month validity</p>
+                <p class="text-gray-800 font-semibold mb-2">Price: $19.99/month</p>
+                <p class="text-sm text-green-600 mb-4 pulse-offer">🔥 Limited Offer: Extra 20 GB free!</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition transform hover:scale-105 w-full">Subscribe</button>
+            </div>
+
+            <div class="bg-white shadow rounded p-6 hover:shadow-xl hover:scale-105 transition transform duration-300 ease-in-out">
+                <h3 class="text-xl font-bold mb-3">Enterprise Plan</h3>
+                <p class="text-gray-600 mb-2">Features: Custom solutions, priority support</p>
+                <p class="text-gray-800 font-semibold mb-2">Price: Contact Sales</p>
+                <p class="text-sm text-blue-600 mb-4">📞 Tailored plans for businesses</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition transform hover:scale-105 w-full">Contact Sales</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
